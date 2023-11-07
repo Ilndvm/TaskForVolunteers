@@ -3,7 +3,8 @@ public class ArrayTaskForVolunteers {
 //        int[] givenArray = {3, 2, -2, 5, -3};
 //        int[] givenArray = {1, 1, 2, -1, 2, -1};
 //        int[] givenArray = {1, 2, 3, -4};
-        int[] givenArray = {1, 1};
+//        int[] givenArray = {1, 1};
+        int[] givenArray = {2, -3, -2, 5, 3, -2};
         int[] arrayOfAbsolute = new int[givenArray.length];
         int max=0;
 
@@ -15,6 +16,9 @@ public class ArrayTaskForVolunteers {
             }
         }
         for (int i=0; i<arrayOfAbsolute.length; i++){
+            if (arrayOfAbsolute[i]<0){
+                arrayOfAbsolute[i]*=-1;
+            }
             if (arrayOfAbsolute[i]>max) {
                 max=arrayOfAbsolute[i];
             }
